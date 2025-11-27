@@ -23,6 +23,6 @@ It supports **full user folder backups**, **hidden configuration files**, **brow
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/secure-linux-backup.git
+git clone https://github.com/abd3l3li/secure-linux-backup.git
 cd secure-linux-backup
 chmod +x backup_restore.sh
