@@ -25,4 +25,4 @@ It supports **full user folder backups**, **hidden configuration files**, **brow
 ```bash
 git clone https://github.com/abd3l3li/secure-linux-backup.git
 cd secure-linux-backup
-chmod +x backup_restore.sh
+chmod +x backup_data.sh
