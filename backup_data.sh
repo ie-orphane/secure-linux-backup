@@ -81,7 +81,7 @@ decrypt_backup() {
 # --------------------------------
 #  Backup
 # --------------------------------
-backup_data() {
+store_data() {
     drive=$(choose_drive)
     backup_path="$drive/$BACKUP_FOLDER_NAME"
     mkdir -p "$backup_path"
@@ -153,9 +153,9 @@ restore_data() {
 #  Script menu
 # --------------------------------
 case "$1" in
-    -b | --backup)
+    -s | --store)
         check_tools
-        backup_data
+        store_data
         ;;
     -r | --restore)
         check_tools
@@ -163,7 +163,7 @@ case "$1" in
         ;;
     *)
         echo -e "Usage: \e[1;37m$0\e[0m [OPTION]\n\nOptions:"
-        echo -e "  \e[1;32m-b\e[0;32m, \e[1;32m--backup\e[0m    store your files in an encrypted backup"
+        echo -e "  \e[1;32m-s\e[0;32m, \e[1;32m--store\e[0m    store your files in an encrypted backup"
         echo -e "  \e[1;33m-r\e[1;33m, \e[1;33m--restore\e[0m   restore your files from an encrypted backup"
         exit 1
         ;;
